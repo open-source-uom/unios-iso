@@ -1,0 +1,9 @@
+work/
+out/
+*.iso
+*.pkg.tar.zst
+*.pkg.tar.xz
+.DS_Store
+Thumbs.db
+*.swp
+*~
