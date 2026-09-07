@@ -8,7 +8,6 @@ bcachefs-tools
 bind
 bolt
 brltty
-broadcom-wl
 btrfs-progs
 clonezilla
 cloud-init
@@ -154,6 +153,6 @@ firefox
 konsole
 kate
 make
-scdoc 
+scdoc
 bats
-cargo
+rustup
