@@ -1,0 +1,11 @@
+NAME="UniOS"
+PRETTY_NAME="UniOS 1.0 Academic Racoon"
+ID=unios
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;138;92;246"
+HOME_URL="https://unios-project.eu"
+DOCUMENTATION_URL="https://docs.unios-project.eu"
+SUPPORT_URL="https://github.com/open-source-uom"
+BUG_REPORT_URL="https://github.com/open-source-uom/unios-iso"
+LOGO=unios-logo
