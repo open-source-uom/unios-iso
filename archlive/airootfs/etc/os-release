@@ -1,5 +1,5 @@
 NAME="UniOS"
-PRETTY_NAME="UniOS 1.0 Academic Racoon"
+PRETTY_NAME="UniOS 1.0 Academic Raccoon"
 ID=unios
 ID_LIKE=arch
 BUILD_ID=rolling
