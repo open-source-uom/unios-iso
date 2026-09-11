@@ -160,3 +160,11 @@ make
 scdoc
 bats
 rustup
+base-devel
+kde-applications-meta
+libreoffice-fresh
+bluez
+bluez-utils
+bluedevil
+power-profiles-daemon
+unios-meta
