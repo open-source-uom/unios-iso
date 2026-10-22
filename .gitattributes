@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.sh text eol=lf
+*.conf text eol=lf
+*.desktop text eol=lf
+*.hook text eol=lf
+passwd text eol=lf
+shadow text eol=lf
+group text eol=lf
+gshadow text eol=lf
