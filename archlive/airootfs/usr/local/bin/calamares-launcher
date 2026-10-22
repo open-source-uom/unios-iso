@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Calamares live environment autostart launcher
+
+# Brief delay to allow the desktop compositor and session to settle
+sleep 2
+
+# Allow root access to the display server if needed
+if command -v xhost &>/dev/null; then
+    xhost +local:root &>/dev/null || true
+fi
+
+# Execute Calamares with root privileges
+if [ "$(id -u)" -eq 0 ]; then
+    exec /usr/bin/calamares "$@"
+else
+    exec sudo -E /usr/bin/calamares "$@"
+fi

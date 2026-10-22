@@ -22,10 +22,12 @@ file_permissions=(
   ["/etc/sudoers.d"]="0:0:750"
   ["/etc/sudoers.d/liveuser"]="0:0:440"
   ["/home/liveuser"]="1000:1000:755"
+  ["/home/liveuser/Desktop/calamares.desktop"]="1000:1000:755"
   ["/root"]="0:0:750"
   ["/root/.automated_script.sh"]="0:0:755"
   ["/root/.gnupg"]="0:0:700"
   ["/usr/local/bin/choose-mirror"]="0:0:755"
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
+  ["/usr/local/bin/calamares-launcher"]="0:0:755"
 )
