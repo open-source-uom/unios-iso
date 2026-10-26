@@ -58,13 +58,19 @@ for s in "${LIVE_SERVICES[@]}"; do
 done
 rm -rf /etc/systemd/system/cloud-init.target.wants 2>/dev/null || true
 
-# 6. Remove installer packages from target system
+# 6. Initialize the pacman keyring (the live one lives on a tmpfs and is not copied)
+echo "--> Initializing pacman keyring..."
+pacman-key --init
+pacman-key --populate
+gpgconf --homedir /etc/pacman.d/gnupg --kill all 2>/dev/null || true
+
+# 7. Remove installer packages from target system
 echo "--> Removing installer and live packages from installed system..."
 pacman -Rsn --noconfirm unios-calamares 2>/dev/null || true
 pacman -Rsn --noconfirm ckbcomp 2>/dev/null || true
 pacman -Rsn --noconfirm mkinitcpio-archiso 2>/dev/null || true
 
-# 7. Clean package caches and delete self
+# 8. Clean package caches and delete self
 echo "--> Cleaning package cache..."
 pacman -Scc --noconfirm 2>/dev/null || true
 
